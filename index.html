@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacor | Productos Cárnicos Premium y Embutidos Artesanales</title>
+    <meta name="description" content="Descubre el sabor auténtico de Bacor. Fabricamos chorizos parrilleros, santarrosanos, mexicanos y carnes de hamburguesa de la más alta calidad.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544022613-e879714d8d4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-zinc-50 text-zinc-900 overflow-x-hidden">
+
+    <!-- Navegación -->
+    <header class="fixed w-full z-50 bg-white/95 text-zinc-950 shadow-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <span class="text-3xl font-bold brand-font text-red-600">BACOR</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
+                <li><a href="index.html" class="hover:text-red-600 transition-colors">Inicio</a></li>
+                <li><a href="#productos" class="hover:text-red-600 transition-colors">Nuestros Productos</a></li>
+                <li><a href="#nosotros" class="hover:text-red-600 transition-colors">Nuestra Fábrica</a></li>
+                <li><a href="#contacto" class="hover:text-red-600 transition-colors">Pedidos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-zinc-200 absolute w-full left-0 px-6 py-6 transition-all duration-300">
+            <ul class="flex flex-col space-y-4 font-semibold text-sm uppercase tracking-widest text-center">
+                <li><a href="index.html" class="block py-2 hover:text-red-600">Inicio</a></li>
+                <li><a href="#productos" class="block py-2 hover:text-red-600">Productos</a></li>
+                <li><a href="#nosotros" class="block py-2 hover:text-red-600">Nosotros</a></li>
+                <li><a href="#contacto" class="block py-2 hover:text-red-600">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-6">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Sabor que une a la Familia</h1>
+                <p class="text-xl md:text-2xl font-light mb-10 text-zinc-300">Embutidos artesanales y carnes premium seleccionadas para los paladares más exigentes.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#productos" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-sm transition-all shadow-lg brand-font text-lg">
+                        Ver Productos
+                    </a>
+                    <a href="#nosotros" class="bg-transparent border-2 border-white hover:bg-white hover:text-zinc-950 font-bold py-4 px-10 rounded-sm transition-all brand-font text-lg">
+                        Nuestra Calidad
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Productos -->
+        <section id="productos" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Nuestra Selección Premium</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-zinc-600 max-w-2xl mx-auto italic">En Bacor, cada producto es elaborado con carnes seleccionadas y recetas tradicionales que garantizan un sabor inigualable en tu mesa.</p>
+            </div>
+
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1: Chorizos -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="chorizos.html" class="block relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80" alt="Chorizos Artesanales Bacor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                            <div class="bg-red-600 text-white px-3 py-1 text-xs font-bold brand-font">¡Especialidad!</div>
+                        </div>
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Chorizos Artesanales</h3>
+                        <p class="text-zinc-600 text-sm mb-4 leading-relaxed flex-grow">Parrillero, Santarrosano, Mexicano y Cuncia. Elaborados con especias naturales y carne de primera.</p>
+                        <p class="text-red-600 font-bold mb-6">Calidad Superior</p>
+                        <a href="chorizos.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver Variedades
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Salchichas -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="salchichas.html" class="block relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1532246420286-127bcd803104?auto=format&fit=crop&w=800&q=80" alt="Salchicha Americana Bacor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Salchicha Americana</h3>
+                        <p class="text-zinc-600 text-sm mb-4 leading-relaxed flex-grow">Sabor clásico y textura perfecta. Ideal para hot dogs gourmet y asados familiares.</p>
+                        <p class="text-red-600 font-bold mb-6">Sabor Auténtico</p>
+                        <a href="salchichas.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Hamburguesas -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="hamburguesas.html" class="block relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80" alt="Carne para Hamburguesa Bacor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                            <div class="bg-zinc-950 text-white px-3 py-1 text-xs font-bold brand-font">¡Novedad!</div>
+                        </div>
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Hamburguesa Cuadrada</h3>
+                        <p class="text-zinc-600 text-sm mb-4 leading-relaxed flex-grow">Carne 100% seleccionada con nuestro corte cuadrado característico. Jugosa y llena de sabor.</p>
+                        <p class="text-red-600 font-bold mb-6">Corte Premium</p>
+                        <a href="hamburguesas.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Combos Parrilleros -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="combos.html" class="block relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Combos Parrilleros Bacor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Combos Parrilleros</h3>
+                        <p class="text-zinc-600 text-sm mb-4 leading-relaxed flex-grow">La combinación perfecta de nuestros mejores embutidos para tu próximo asado.</p>
+                        <p class="text-red-600 font-bold mb-6">Ahorra en Grande</p>
+                        <a href="combos.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver Combos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Complementos -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="complementos.html" class="block relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?auto=format&fit=crop&w=800&q=80" alt="Complementos Bacor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Complementos</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed flex-grow">Salsas artesanales y acompañamientos ideales para resaltar el sabor de nuestras carnes.</p>
+                        <a href="complementos.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="nosotros" class="py-24 bg-zinc-900 text-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1607623273070-43ab836e7bb5?auto=format&fit=crop&w=800&q=80" alt="Fábrica Bacor" class="rounded-lg shadow-2xl border border-zinc-700">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-8">Tradición y Calidad</h2>
+                        <p class="text-zinc-400 text-lg mb-6 leading-relaxed">En <span class="text-red-600 font-semibold">Bacor</span>, llevamos el arte de la charcutería a otro nivel.</p>
+                        <p class="text-zinc-400 text-lg mb-8 leading-relaxed">Nuestra fábrica utiliza procesos artesanales combinados con los más altos estándares de higiene y calidad. Seleccionamos cada corte de carne para asegurar que solo lo mejor llegue a tu mesa.</p>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <li class="flex items-center space-x-3 text-zinc-300">
+                                <i class="fa-solid fa-check text-red-600"></i>
+                                <span>Carnes 100% Seleccionadas</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-zinc-300">
+                                <i class="fa-solid fa-check text-red-600"></i>
+                                <span>Procesos Artesanales</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-zinc-300">
+                                <i class="fa-solid fa-check text-red-600"></i>
+                                <span>Sin Conservantes Artificiales</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-zinc-300">
+                                <i class="fa-solid fa-check text-red-600"></i>
+                                <span>Recetas Tradicionales</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">¿Hacemos un asado?</h2>
+                <p class="text-zinc-600 mb-10 max-w-xl mx-auto">Haz tu pedido ahora y recibe los mejores productos cárnicos directamente en tu puerta.</p>
+                <a href="https://wa.me/573165197995?text=Hola%20Bacor!%20Quiero%20hacer%20un%20pedido%20de%20sus%20productos." target="_blank" class="inline-block bg-red-600 text-white font-bold py-6 px-12 rounded-sm brand-font text-2xl hover:bg-zinc-950 hover:text-white transition-all">
+                    Hacer Pedido por WhatsApp <i class="fa-brands fa-whatsapp ml-2"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-white py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <a href="index.html" class="block mb-6">
+                    <span class="text-4xl font-bold brand-font text-red-600">BACOR</span>
+                </a>
+                <p class="text-zinc-500">Productos cárnicos artesanales de alta calidad. El sabor que tu familia merece.</p>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Enlaces</h4>
+                <ul class="space-y-4 text-zinc-500">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li><a href="#productos" class="hover:text-white transition-colors">Productos</a></li>
+                    <li><a href="#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+                    <li><a href="privacidad.html" class="hover:text-white transition-colors">Privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-white transition-colors">Términos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Síguenos</h4>
+                <ul class="space-y-4 text-zinc-500">
+                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-instagram text-xl"></i> @bacor_carnicos</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-facebook-f text-xl"></i> Bacor Carnes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Ubicación</h4>
+                <p class="text-zinc-500 flex items-start gap-3">
+                    <i class="fa-solid fa-location-dot mt-1 text-xl"></i>
+                    <span>Bogotá, Colombia</span>
+                </p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-12 border-t border-zinc-900 mt-12 text-center text-zinc-600 text-sm">
+            <p>&copy; 2024 Bacor. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        document.querySelectorAll('#mobile-menu a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    </script>
+<script type="module" src="/index.tsx"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/573165197995?text=Hola%20Bacor!%20Quiero%20hacer%20un%20pedido." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>

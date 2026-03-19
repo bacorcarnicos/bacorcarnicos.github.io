@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salchichas Premium | Bacor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        
+        /* Simple gallery script/styles */
+        .thumbnail { cursor: pointer; opacity: 0.6; transition: opacity 0.3s; }
+        .thumbnail:hover, .thumbnail.active { opacity: 1; border-color: #ef4444; }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900">
+    <!-- Header -->
+    <header class="bg-white text-zinc-950 py-6 border-b border-zinc-200 shadow-sm">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <span class="text-3xl font-bold brand-font tracking-tighter text-red-600">BACOR</span>
+            </a>
+            <a href="index.html" class="text-sm uppercase tracking-widest hover:text-red-600 font-bold brand-font">Volver al Inicio</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 max-w-5xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Image Gallery -->
+            <div class="flex flex-col gap-4">
+                <!-- Main Image -->
+                <div class="bg-white border border-zinc-200 p-2 rounded-lg shadow-sm h-96 md:h-[500px] overflow-hidden">
+                    <img id="mainImage" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800" alt="Salchichas Premium - Vista Principal" class="w-full h-full object-cover rounded">
+                </div>
+                
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-5 gap-2">
+                    <div class="border-2 border-red-600 rounded overflow-hidden h-20 thumbnail active" onclick="changeImage(this, 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800')">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800" alt="Salchicha 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1529692236671-f1f6e946a8b5?auto=format&fit=crop&q=80&w=800')">
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6e946a8b5?auto=format&fit=crop&q=80&w=800" alt="Salchicha 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1593030103066-0093718efeb9?auto=format&fit=crop&q=80&w=800')">
+                        <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?auto=format&fit=crop&q=80&w=800" alt="Salchicha 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&q=80&w=800')">
+                        <img src="https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&q=80&w=800" alt="Salchicha 4" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=800')">
+                        <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=800" alt="Salchicha 5" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="flex flex-col justify-center">
+                <div class="flex items-center gap-3 mb-2">
+                    <h1 class="text-4xl md:text-5xl font-bold">Salchichas Premium</h1>
+                    <span class="bg-red-600 text-white px-3 py-1 text-xs font-bold brand-font">¡Sabor Único!</span>
+                </div>
+                <p class="text-2xl font-light text-zinc-500 mb-6">Calidad Superior</p>
+                
+                <div class="space-y-4 text-zinc-700 leading-relaxed mb-8">
+                    <p>Nuestras salchichas están elaboradas con las mejores carnes seleccionadas, siguiendo procesos artesanales que garantizan una textura y sabor inigualables. Ideales para parrilladas, hot dogs gourmet o platos especiales.</p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li>Salchicha Americana: El sabor clásico con un toque premium.</li>
+                        <li>Salchicha Parrillera: Especialmente diseñada para el asador.</li>
+                        <li>100% Carne seleccionada sin rellenos innecesarios.</li>
+                        <li>Ahumado natural para un aroma profundo.</li>
+                        <li>Empaque al vacío para máxima frescura.</li>
+                    </ul>
+                </div>
+
+                <a href="https://wa.me/573165197995?text=Hola%20Bacor!%20Me%20interesa%20comprar%20Salchichas%20Premium." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-4 text-lg font-bold brand-font hover:bg-red-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Pedir por WhatsApp
+                </a>
+                
+                <div class="mt-6 flex items-center justify-center gap-4 text-sm text-zinc-500">
+                    <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Envíos en Bogotá y alrededores</span>
+                    <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg> Calidad Garantizada</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-white py-16 border-t border-zinc-900 mt-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-left">
+            <div>
+                <a href="index.html" class="block mb-6">
+                    <span class="text-4xl font-bold brand-font tracking-tighter text-red-600">BACOR</span>
+                </a>
+                <p class="text-zinc-500">Productos cárnicos artesanales de la más alta calidad. Tradición y sabor en cada bocado.</p>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Enlaces</h4>
+                <ul class="space-y-4 text-zinc-500">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li><a href="index.html#productos" class="hover:text-white transition-colors">Productos</a></li>
+                    <li><a href="index.html#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+                    <li><a href="privacidad.html" class="hover:text-white transition-colors">Privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-white transition-colors">Términos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Síguenos</h4>
+                <ul class="space-y-4 text-zinc-500">
+                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-instagram text-xl"></i> @bacor_carnicos</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-facebook-f text-xl"></i> Bacor Carnicos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Ubicación</h4>
+                <p class="text-zinc-500 flex items-start gap-3">
+                    <i class="fa-solid fa-location-dot mt-1 text-xl"></i>
+                    <span>Bogotá, Colombia<br>Fábrica de Productos Cárnicos</span>
+                </p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-12 border-t border-zinc-900 mt-12 text-center text-zinc-600 text-sm">
+            <p>&copy; 2024 BACOR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(element, src) {
+            // Update main image
+            document.getElementById('mainImage').src = src;
+            
+            // Update active state on thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(t => {
+                t.classList.remove('active', 'border-red-600');
+                t.classList.add('border-transparent');
+            });
+            
+            element.classList.add('active', 'border-red-600');
+            element.classList.remove('border-transparent');
+        }
+    </script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/573165197995?text=Hola%20Bacor!%20Quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>
