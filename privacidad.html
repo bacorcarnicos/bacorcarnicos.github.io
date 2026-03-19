@@ -10,15 +10,18 @@
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap');
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, .brand-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        .bg-brand { background-color: #7b0003; }
+        .text-brand { color: #7b0003; }
+        .border-brand { border-color: #7b0003; }
     </style>
 </head>
 <body class="bg-zinc-50 text-zinc-900">
-    <header class="bg-white text-zinc-950 py-6 border-b border-zinc-200 shadow-sm">
+    <header class="bg-brand text-white py-6 border-b border-white/10 shadow-sm">
         <nav class="container mx-auto px-6 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
-                <span class="text-3xl font-bold brand-font tracking-tighter text-zinc-950">BA<span class="text-red-600">COR</span></span>
+                <img src="https://ik.imagekit.io/serrzndwp/Bacor/d53c0c9d-1b6e-4733-8198-f078b1c7c348.jpg?updatedAt=1773881572547" alt="Bacor Logo" class="h-12 w-auto rounded-full">
             </a>
-            <a href="index.html" class="text-sm uppercase tracking-widest hover:text-red-600 font-bold brand-font">Inicio</a>
+            <a href="index.html" class="text-sm uppercase tracking-widest hover:text-black font-bold brand-font">Inicio</a>
         </nav>
     </header>
     <main class="container mx-auto px-6 py-16 max-w-3xl">
@@ -31,46 +34,45 @@
             <p>Implementamos medidas de seguridad para proteger su información personal. No compartimos sus datos con terceros con fines publicitarios.</p>
         </div>
     </main>
-    <footer class="bg-zinc-950 text-white py-16 border-t border-zinc-900 mt-12">
+    <footer class="bg-brand text-white py-16 border-t border-white/10 mt-12">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-left">
             <div>
                 <a href="index.html" class="block mb-6">
-                    <span class="text-3xl font-bold brand-font tracking-tighter text-white">BA<span class="text-red-600">COR</span></span>
+                    <img src="https://ik.imagekit.io/serrzndwp/Bacor/d53c0c9d-1b6e-4733-8198-f078b1c7c348.jpg?updatedAt=1773881572547" alt="Bacor Logo" class="h-16 w-auto rounded-full bg-white p-1">
                 </a>
-                <p class="text-zinc-500">Productos cárnicos de alta calidad. Tradición y sabor en cada bocado.</p>
+                <p class="text-white">Productos cárnicos artesanales de alta calidad. El sabor que tu familia merece.</p>
             </div>
             <div>
-                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Enlaces</h4>
-                <ul class="space-y-4 text-zinc-500">
-                    <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
-                    <li><a href="index.html#productos" class="hover:text-white transition-colors">Productos</a></li>
-                    <li><a href="index.html#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
-                    <li><a href="privacidad.html" class="hover:text-white transition-colors">Privacidad</a></li>
-                    <li><a href="terminos.html" class="hover:text-white transition-colors">Términos</a></li>
+                <h4 class="font-bold brand-font text-lg mb-6 text-black">Enlaces</h4>
+                <ul class="space-y-4 text-white">
+                    <li><a href="index.html" class="hover:text-black transition-colors">Inicio</a></li>
+                    <li><a href="index.html#productos" class="hover:text-black transition-colors">Productos</a></li>
+                    <li><a href="index.html#nosotros" class="hover:text-black transition-colors">Nosotros</a></li>
+                    <li><a href="privacidad.html" class="hover:text-black transition-colors">Privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-black transition-colors">Términos</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Síguenos</h4>
-                <ul class="space-y-4 text-zinc-500">
-                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-instagram text-xl"></i> @bacor_carnicos</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-tiktok text-xl"></i> @bacor_oficial</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-facebook-f text-xl"></i> Bacor Cárnicos</a></li>
+                <h4 class="font-bold brand-font text-lg mb-6 text-black">Síguenos</h4>
+                <ul class="space-y-4 text-white">
+                    <li><a href="https://instagram.com/bacorproductoscarnicos" target="_blank" class="hover:text-black transition-colors flex items-center gap-3"><i class="fa-brands fa-instagram text-xl"></i> @bacorproductoscarnicos</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors flex items-center gap-3"><i class="fa-brands fa-facebook-f text-xl"></i> Bacor Carnes</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Ubicación</h4>
-                <p class="text-zinc-500 flex items-start gap-3">
+                <h4 class="font-bold brand-font text-lg mb-6 text-black">Ubicación</h4>
+                <p class="text-white flex items-start gap-3">
                     <i class="fa-solid fa-location-dot mt-1 text-xl"></i>
-                    <span>Calle 50 sur # 77Q-23<br>Kennedy - Bogotá<br>Colombia</span>
+                    <span>Bogotá, Colombia</span>
                 </p>
             </div>
         </div>
-        <div class="container mx-auto px-6 pt-12 border-t border-zinc-900 mt-12 text-center text-zinc-600 text-sm">
+        <div class="container mx-auto px-6 pt-12 border-t border-white/20 mt-12 text-center text-white text-sm">
             <p>&copy; 2024 Bacor. Todos los derechos reservados.</p>
         </div>
     </footer>
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/573165197995?text=Hola%20Bacor!%20Quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50">
+    <a href="https://wa.me/573232446532?text=Hola%20Bacor!%20Quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 </body>
